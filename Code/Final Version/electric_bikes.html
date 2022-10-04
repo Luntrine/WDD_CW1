@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>ARNGREN</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="items.js"></script>
+	</head>
+
+	<body onload="getNumItems()">
+		<header>
+			<h1><a href="home.html">ARNGREN</a></h1>
+				<input type="search" value="" id="box" onchange="openPage()">
+				<input type="submit" value="Search">
+		</header>
+
+		<aside id="menu"><!-- Side Menu -->
+			<ul>
+				<li id="title"><b>Product Categories</b></li>
+				<br>
+				<li><a href="electric_bikes.html" class="current">Electric Bikes</a></li>
+				<br>
+				<li><a href="kids_electric_vehicles.html">Kids Electric Vehicles</a></li>
+				<br>
+				<li><a href="outdoor_equipment.html">Outdoor Equipment</a></li>
+				<br>
+				<li><a href="scooters.html">Scooters</a></li>
+				<br>
+				<li><a href="small_electric_toys.html">Small Electric Toys</a></li>
+			</ul>
+		</aside>
+
+		<section class="nav-bar"><!-- Navigation Bar -->
+		<div class="grid-container">
+			<div class="grid-item"><a href="login.html">Sign up & Login</a></div>
+			<div class="grid-item"><a href="home.html">Home</a></div>
+			<div class="grid-item"><a href="basket.html" id="basketnum">Basket</a></div>
+		</div>
+		</section>
+
+		<section><!-- Product List -->
+			<div class="grid-container-p" id="Electric Fat Bike">
+				<div class="grid-item-name"><p>Electric Fat Bike</p></div>
+				<div class="grid-item-img"><img src="Images/Fatbike.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc"><p>An aluminum framed electric mountain bike with fat tires, ideal for that extra stability on uneven ground for when you want to go further. Equipped with a 500 watt motor allowing you to get help with those harder climbs when you need it but it won't weigh you down due to it's lightweight design.</p></div>
+				<div class="grid-item-price"><p>£1,000.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+
+			<div class="grid-container-p" id="Womans Electric Bike">
+				<div class="grid-item-name"><p>Womans Electric Bike</p></div>
+				<div class="grid-item-img"><img src="Images/Womans.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc"><p>This electric bike is perfect for those relaxing rides around the neighbourhood or a local park, with its pedal assist features itll help you up those steeper hills as well as just getting around that litlle bit faster while still allowing you to get excersise.</p></div>
+				<div class="grid-item-price"><p>£950.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+
+			<div class="grid-container-p" id="Commuter Adventure Bike">
+				<div class="grid-item-name"><p>Commuter - Adventure Bike</p></div>
+				<div class="grid-item-img"><img src="Images/Adventure.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc"><p>This bike is the perfect hybrid betweek a commuter bike and a mountain bike, allowing you to get to work easily as well as giving you the freedom to head off on an adventure outside the city afterwards, with its poweful motor and long lasting battery its perfect for going anywhere.</p></div>
+				<div class="grid-item-price"><p>£1,200.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+		</section>
+		
+	</body>
+</html>
+

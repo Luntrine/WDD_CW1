@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>ARNGREN</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="items.js"></script>
+	</head>
+
+	<body onload="getNumItems()">
+		<header>
+			<h1><a href="home.html">ARNGREN</a></h1>
+				<input type="search" value="" id="box" onchange="openPage()">
+				<input type="submit" value="Search">
+		</header>
+
+		<aside id="menu"><!-- Side Menu -->
+			<ul>
+				<li id="title"><b>Product Categories</b></li>
+				<br>
+				<li><a href="electric_bikes.html">Electric Bikes</a></li>
+				<br>
+				<li><a href="kids_electric_vehicles.html" class="current">Kids Electric Vehicles</a></li>
+				<br>
+				<li><a href="outdoor_equipment.html">Outdoor Equipment</a></li>
+				<br>
+				<li><a href="scooters.html">Scooters</a></li>
+				<br>
+				<li><a href="small_electric_toys.html">Small Electric Toys</a></li>
+			</ul>
+		</aside>
+
+		<section class="nav-bar"><!-- Navigation Bar -->
+		<div class="grid-container">
+			<div class="grid-item"><a href="login.html">Sign up & Login</a></div>
+			<div class="grid-item"><a href="home.html">Home</a></div>
+			<div class="grid-item"><a href="basket.html" id="basketnum">Basket</a></div>
+		</div>
+		</section>
+
+		<section><!-- Product List -->
+			<div class="grid-container-p"  id="Willy's Jeep">
+				<div class="grid-item-name">Willy's Jeep</div>
+				<div class="grid-item-img"><img src="Images/Jeep.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc">Based on the classic jeep used in the wars, this allows your child to explore the great outdoors in their very own off roader with functional 4 wheel drive.</div>
+				<div class="grid-item-price"><p>£149.99</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+
+			<div class="grid-container-p"  id="Childrens Electric Dirt Bike">
+				<div class="grid-item-name"><p>Childrens Electric Dirt Bike</p></div>
+				<div class="grid-item-img"><img src="Images/Dirtbike.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc"><p>This small electric dirt bike is perfect for younger children who have the need for speed. But not too much as its 1000 watt motor is limited to 25 kilometers per hour so your kids don’t get too ahead of themselves but can still have plenty of fun whether they are just riding about alone or out on an adventure with the family.</p></div>
+				<div class="grid-item-price"><p>£550.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+		</section>
+		
+	</body>
+</html>
+

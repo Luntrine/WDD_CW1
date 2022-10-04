@@ -1,0 +1,91 @@
+/*menu*/
+#menu {
+	float:left;
+}
+
+#menu li{
+	list-style-type: none;
+}
+
+#menu li:not(#title){
+	background-color: black;
+}
+
+#menu li a:hover {
+	background-color: #555;
+}
+
+#menu a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 8px;
+	font-size: 15px;
+}
+
+
+/*nav bar*/
+.nav-bar {
+  background-color: black;
+  overflow: hidden;
+}
+
+.nav-bar a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	float: left;
+	padding: 14px 36px;
+	font-size: 20px;
+}
+
+.nav-bar a:hover {
+	background-color: #555;
+}
+
+
+/*header*/
+header {
+	display: flex;
+	padding-left: 40px;
+}
+
+/*search bar (I think)*/
+#box {
+	width:500px; /*length of box*/
+	margin-top:25px; /*distance between top of page and box*/
+	margin-left:50px; /*distance between ARNGREN and box*/	
+}
+
+input[type=submit] {
+	background-color: #07403a; /*submit button colour*/
+	color: white; /*submit text colour*/
+}
+
+input {
+	height:32px; 
+	border: none; 
+	background-color: #A8A8A8;
+	margin: 5px;
+}
+
+
+/*grid for main page content*/
+.grid-container{
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	margin-right:40px;
+}
+
+.grid-item {
+	margin: 50px;
+	padding: 20px;
+	font-size: 23px;
+	text-align: center;
+	width:90%;
+}
+
+.current {
+	background-color: #07403a;
+}
+

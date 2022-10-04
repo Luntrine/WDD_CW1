@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>ARNGREN</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="items.js"></script>
+	</head>
+
+	<body onload="getNumItems(); removeAll()">
+		<header>
+			<h1><a href="home.html">ARNGREN</a></h1>
+				<input type="search" value="" id="box" onchange="openPage()">
+				<input type="submit" value="Search">
+		</header>
+
+		<aside id="menu"><!-- Side Menu -->
+			<ul>
+				<li id="title"><b>Product Categories</b></li>
+				<br>
+				<li><a href="electric_bikes.html">Electric Bikes</a></li>
+				<br>
+				<li><a href="kids_electric_vehicles.html">Kids Electric Vehicles</a></li>
+				<br>
+				<li><a href="outdoor_equipment.html">Outdoor Equipment</a></li>
+				<br>
+				<li><a href="scooters.html">Scooters</a></li>
+				<br>
+				<li><a href="small_electric_toys.html">Small Electric Toys</a></li>
+			</ul>
+		</aside>
+
+		<section class="nav-bar"><!-- Navigation Bar -->
+		<div class="grid-container">
+			<div class="grid-item"><a href="login.html">Sign up & Login</a></div>
+			<div class="grid-item"><a href="home.html">Home</a></div>
+			<div class="grid-item"><a href="basket.html" class="current" id="basketnum">Basket</a></div>
+		</div>
+		</section>
+
+		<section>
+			<div class="grid-container"><!-- Product Grid -->
+			<div class="grid-item"></div>
+			<div class="grid-item">
+			<h3>Thank You</h3>
+			<p>Expect delivery in 3-5 business days.</p>
+			<div class="grid-item"></div>
+		</section>
+	</body>
+</html>
+

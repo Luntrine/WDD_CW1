@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<title>ARNGREN</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="items.js"></script>
+	</head>
+
+	<body onload="getNumItems()">
+		<header>
+			<h1><a href="home.html">ARNGREN</a></h1>
+				<input type="search" value="" id="box" onchange="openPage()">
+				<input type="submit" value="Search">
+		</header>
+
+		<aside id="menu"><!-- Side Menu -->
+			<ul>
+				<li id="title"><b>Product Categories</b></li>
+				<br>
+				<li><a href="electric_bikes.html">Electric Bikes</a></li>
+				<br>
+				<li><a href="kids_electric_vehicles.html" class="current">Kids Electric Vehicles</a></li>
+				<br>
+				<li><a href="outdoor_equipment.html">Outdoor Equipment</a></li>
+				<br>
+				<li><a href="scooters.html">Scooters</a></li>
+				<br>
+				<li><a href="small_electric_toys.html">Small Electric Toys</a></li>
+			</ul>
+		</aside>
+
+		<section class="nav-bar"><!-- Navigation Bar -->
+		<div class="grid-container">
+			<div class="grid-item"><a href="login.html">Sign up & Login</a></div>
+			<div class="grid-item"><a href="home.html">Home</a></div>
+			<div class="grid-item"><a href="basket.html" id="basketnum">Basket</a></div>
+		</div>
+		</section>
+
+		<section><!-- Product List -->
+			<div class="grid-container-p"  id="Willy's Jeep">
+				<div class="grid-item-name">Willy's Jeep</div>
+				<div class="grid-item-img"><img src="Images/Jeep.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc">Based on the classic jeep used in the wars, this allows your child to explore the great outdoors in their very own off roader with functional 4 wheel drive.</div>
+				<div class="grid-item-price"><p>£149.99</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+
+			<div class="grid-container-p"  id="Childrens Electric Dirt Bike">
+				<div class="grid-item-name"><p>Childrens Electric Dirt Bike</p></div>
+				<div class="grid-item-img"><img src="Images/Dirtbike.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc"><p>This small electric dirt bike is perfect for younger children who have the need for speed. But not too much as its 1000 watt motor is limited to 25 kilometers per hour so your kids don’t get too ahead of themselves but can still have plenty of fun whether they are just riding about alone or out on an adventure with the family.</p></div>
+				<div class="grid-item-price"><p>£550.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+
+			<div class="grid-container-p"  id="Electric Dune Buggy">
+				<div class="grid-item-name"><p>Electric Dune Buggy</p></div>
+				<div class="grid-item-img"><img src="Images/Dune.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc"><p>Perfect for when your kids want to be able to go explore the great outdoors, this vehicle with its chunky tyres will be perfect for the job and its soft suspension will allow it too clear almost any obstacle.</p></div>
+				<div class="grid-item-price"><p>£750.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+
+			<div class="grid-container-p"  id="Electric Porsche">
+				<div class="grid-item-name"><p>Electric Porsche</p></div>
+				<div class="grid-item-img"><img src="Images/Porsche.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc"><p>For your future car nut kid, this mini porsche lets them experience their favourite sports car for a fraction of the price, with its vibrant red colouring it looks the part too, great for those sunny days.</p></div>
+				<div class="grid-item-price"><p>£600.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+
+			<div class="grid-container-p"  id="Mini John Deere Tractor">
+				<div class="grid-item-name"><p>Mini John Deere Tractor</p></div>
+				<div class="grid-item-img"><img src="Images/Tractor.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc"><p>If your little one wants to help around the garden, there is nothing better than this, with its optional trailer this mini tractor is perfect for letting them lend a hand while still having fun and making sure they are safe by allowing them to not have to lift heavy things./p></div>
+				<div class="grid-item-price"><p>£550.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+
+			<div class="grid-container-p"  id="Go kart">
+				<div class="grid-item-name"><p>Go Kart</p></div>
+				<div class="grid-item-img"><img src="Images/GoKart.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc"><p>For that future race car driver in the family, this little go kart is perfect for racing around your local park, allowing your child to feel like their favourite racing driver as they zip around corners.</p></div>
+				<div class="grid-item-price"><p>£400.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+
+			<div class="grid-container-p"  id="Land Rover Defender">
+				<div class="grid-item-name"><p>Land Rover Defender</p></div>
+				<div class="grid-item-img"><img src="Images/Defender.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc"><p>This little defender is as tough and reliable as the real thing, giving you the confidence that tour kid wont be able t get it stuck in the mud when dealing with rougher terrain.</p></div>
+				<div class="grid-item-price"><p>650.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+
+			<div class="grid-container-p"  id="Mini Audi R8">
+				<div class="grid-item-name"><p>Mini Audi R8</p></div>
+				<div class="grid-item-img"><img src="Images/Audi.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc"><p>Is your kid a fan of the comic book and movie star iron man? Well this car will be perfect for them, it has that famous styling that the audi is famous for making sure they too feel like a movie star when they are driving it around.</p></div>
+				<div class="grid-item-price"><p>£700.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+		</section>
+		
+	</body>
+</html>
+

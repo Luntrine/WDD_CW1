@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>ARNGREN</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="items.js"></script>
+	</head>
+
+	<body onload="getNumItems()">
+		<header>
+			<h1><a href="home.html">ARNGREN</a></h1>
+			<form id="search"><!-- Search Bar -->
+				<input id="box" type="text" onchange="openPage()">
+				<input type="submit" value="Search">
+			</form>
+		</header>
+		
+		<aside id="menu"><!-- Side Menu -->
+			<ul>
+				<li id="title"><b>Product Categories</b></li>
+				<br>
+				<li><a href="electric_bikes.html">Electric Bikes</a></li>
+				<br>
+				<li><a href="kids_electric_vehicles.html">Kids Electric Vehicles</a></li>
+				<br>
+				<li><a href="outdoor_equipment.html">Outdoor Equipment</a></li>
+				<br>
+				<li><a href="scooters.html">Scooters</a></li>
+				<br>
+				<li><a href="small_electric_toys.html">Small Electric Toys</a></li>
+			</ul>
+		</aside>
+
+		<section class="nav-bar"><!-- Navigation Bar -->
+		<div class="grid-container">
+			<div class="grid-item"><a href="login.html">Sign up & Login</a></div>
+			<div class="grid-item"><a href="home.html" class="current">Home</a></div>
+			<div class="grid-item"><a href="basket.html" id="basketnum">Basket</a></div>
+		</div>
+		</section>
+
+
+		
+		<section>
+		<div class="grid-container"><!-- Product Grid -->
+			<div class="grid-item">
+				<a href="electric_bikes.html"><img src="Images/Fatbike.jpg" width="175px" height="125px"></a>
+				<p>Fatbike</p>
+				<p>£1,000.00</p>
+			</div>
+
+			<div class="grid-item">
+				<a href="kids_electric_vehicles.html"><img src="Images/Dirtbike.jpg" width="175px" height="125px"></a>
+				<p>Childrens Electric Dirt Bike</p>
+				<p>£550.00</p>
+			</div>
+
+			<div class="grid-item">
+				<a href="outdoor_equipment.html"><img src="Images/Binoculars.jpg" width="175px" height="125px"></a>
+				<p>Sky Master Binoculars</p>
+				<p>£65.00</p>
+			</div>
+
+			<div class="grid-item">
+				<a href="outdoor_equipment.html"><img src="Images/Jack.jpg" width="175px" height="125px"></a>
+				<p>Air Jack</p>
+				<p>£70.00</p>
+			</div>
+
+			<div class="grid-item">
+				<a href="scooters.html"><img src="Images/Adventure.jpg" width="175px" height="125px"></a>
+				<p>Commuter Electric Scooter</p>
+				<p>£299.00</p>
+			</div>
+
+			<div class="grid-item">
+				<a href="small_electric_toys.html"><img src="Images/Robot.jpg" width="175px" height="125px"></a>
+				<p>Robot-Man</p>
+				<p>£30.00</p>
+			</div>
+		</div>
+
+	</body>
+</html>
+

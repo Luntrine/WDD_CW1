@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<title>ARNGREN</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="items.js"></script>
+	</head>
+
+	<body onload="getNumItems()">
+		<header>
+			<h1><a href="home.html">ARNGREN</a></h1>
+				<input type="search" value="" id="box" onchange="openPage()">
+				<input type="submit" value="Search">
+		</header>
+
+		<aside id="menu"><!-- Side Menu -->
+			<ul>
+				<li id="title"><b>Product Categories</b></li>
+				<br>
+				<li><a href="electric_bikes.html">Electric Bikes</a></li>
+				<br>
+				<li><a href="kids_electric_vehicles.html">Kids Electric Vehicles</a></li>
+				<br>
+				<li><a href="outdoor_equipment.html" class="current">Outdoor Equipment</a></li>
+				<br>
+				<li><a href="scooters.html">Scooters</a></li>
+				<br>
+				<li><a href="small_electric_toys.html">Small Electric Toys</a></li>
+			</ul>
+		</aside>
+
+		<section class="nav-bar"><!-- Navigation Bar -->
+		<div class="grid-container">
+			<div class="grid-item"><a href="login.html">Sign up & Login</a></div>
+			<div class="grid-item"><a href="home.html">Home</a></div>
+			<div class="grid-item"><a href="basket.html" id="basketnum">Basket</a></div>
+		</div>
+		</section>
+
+		<section><!-- Product List -->
+			<div class="grid-container-p"  id="Sky Master Binoculars">		
+				<div class="grid-item-name">Sky Master Binoculars</div>
+				<div class="grid-item-img"><img src="Images/Binoculars.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc">Binoculars capable of 20 - 100 times zoom. Included with the binoculars is a tripod, allowing you to get a super stable view through the lenses.</div>
+				<div class="grid-item-price"><p>£65.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+			
+			<div class="grid-container-p"  id="World's Strongest Flashlight">
+				<div class="grid-item-name">World's Strongest Flashlight</div>
+				<div class="grid-item-img"><img src="Images/Flashlight.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc">With a max output of 10000 lumens, this flashlight is more than bright enough for your next camping trip. It is capable of lighting up a whole camping area while you pitch your tent while being compact enough to not take up room in your bag.</div>
+				<div class="grid-item-price"><p>£45.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+
+			<div class="grid-container-p"  id="Air Jack">
+				<div class="grid-item-name">Air Jack</div>
+				<div class="grid-item-img"><img src="Images/Jack.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc">This air jack can be deployed in a pinch whether you need to change a flat tyre or do some maintenance to help you get back home after exploring out in the wilderness for a day, no external tools are needed for inflation as it attatches to your vehicles exhaust to inflate, handy for unexpected incidents.</div>
+				<div class="grid-item-price"><p>£70.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+
+			<div class="grid-container-p"  id="Snow Blower">
+				<div class="grid-item-name">Snow Blower</div>
+				<div class="grid-item-img"><img src="Images/Blower.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc">Whether you need a driveway cleared to allow you to drive to work or a path cleared outside your house to help your neighbours out, this snow blower is the right tool for the job. It will quickly collect the snow and reloacate it off of where you are clearing using the blower section attached to the auger.</div>
+				<div class="grid-item-price"><p>£1,500.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+
+			<div class="grid-container-p"  id="Bicycle Computer">
+				<div class="grid-item-name">Bicycle Computer</div>
+				<div class="grid-item-img"><img src="Images/Computer.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc">This bicycle computer is perfect for when you want to track your bike rides to see your speed and distance alongisde other meausurements. It will mount securely to your handle bars to ensure it wont fall off on that rougher terrain.</div>
+				<div class="grid-item-price"><p>£20.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+
+			<div class="grid-container-p"  id="Translator">
+				<div class="grid-item-name">Translator</div>
+				<div class="grid-item-img"><img src="Images/Translator.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc">Perfect for when you are traveling to a new country and only know basic parts of the langauge, this translator allows you to input text and have it translated to allow the locals to understand you, perfect for when you lack reception on your phone but need a solution.</div>
+				<div class="grid-item-price"><p>£69.99</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+
+			<div class="grid-container-p"  id="Lawnmower">
+				<div class="grid-item-name">Lawnmower</div>
+				<div class="grid-item-img"><img src="Images/Lawnmower.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc">Great for the toughest of grass cutting jobs, this powerful lawnmower will make quick work of the longest grass ensuring you have more time to the things you love.</div>
+				<div class="grid-item-price"><p>£70.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+		</section>
+	</body>
+</html>
+

@@ -1,0 +1,216 @@
+<html>
+	<head>
+		<title>ARNGREN</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="items.js"></script>
+	</head>
+
+	<body onload="displayBasket()">
+		<header>
+			<h1><a href="home.html">ARNGREN</a></h1>
+			<form id="search"><!-- Search Bar -->
+				<input id="box" type="text" onchange="openPage()">
+				<input type="submit" value="Search">
+			</form>
+		</header>
+
+		<aside id="menu"><!-- Side Menu -->
+			<ul>
+				<li id="title"><b>Product Categories</b></li>
+				<br>
+				<li><a href="electric_bikes.html">Electric Bikes</a></li>
+				<br>
+				<li><a href="kids_electric_vehicles.html">Kids Electric Vehicles</a></li>
+				<br>
+				<li><a href="outdoor_equipment.html">Outdoor Equipment</a></li>
+				<br>
+				<li><a href="scooters.html">Scooters</a></li>
+				<br>
+				<li><a href="small_electric_toys.html">Small Electric Toys</a></li>
+			</ul>
+		</aside>
+
+		<section class="nav-bar"><!-- Navigation Bar -->
+		<div class="grid-container">
+			<div class="grid-item"><a href="login.html">Sign up & Login</a></div>
+			<div class="grid-item"><a href="home.html">Home</a></div>
+			<div class="grid-item"><a href="basket.html" class="current" id="basketnum">Basket</a></div>
+		</div>
+		</section>
+
+		<section><!-- Basket -->
+			<h2>Basket</h2>
+			<div id="item-location">
+			<template id="Electric Fat Bike"><!-- Product List -->
+				<div class="grid-container-p" id="Electric Fat Bike">
+					<div class="grid-item-name"><p>Electric Fat Bike</p></div>
+					<div class="grid-item-img"><img src="Images/Fatbike.jpg" width="175px" height="125px"></div>
+					<div class="grid-item-desc"><p>An aluminum framed electric mountain bike with fat tires, ideal for that extra stability on uneven ground for when you want to go further. Equipped with a 500 watt motor allowing you to get help with those harder climbs when you need it but it won't weigh you down due to it's lightweight design.</p></div>
+					<div class="grid-item-price">£1000.00</div>
+					<div class="grid-item-remove" onclick="remove(this.parentNode.id)"><a href="#">remove from Basket</a></div>
+				</div>
+			</template>
+			
+			<template id="Willy's Jeep">
+				<div class="grid-container-p" id="Willy's Jeep">
+					<div class="grid-item-name">Willy's Jeep</div>
+					<div class="grid-item-img"><img src="Images/Jeep.jpg" width="175px" height="125px"></div>
+					<div class="grid-item-desc">Based on the classic jeep used in the wars, this allows your child to explore the great outdoors in their very own off roader with functional 4 wheel drive.</div>
+					<div class="grid-item-price">£149.99</div>
+					<div class="grid-item-remove" onclick="remove(this.parentNode.id)"><a href="#">remove from Basket</a></div>
+				</div>
+			</template>
+			
+			<template id="Childrens Electric Dirt Bike">
+				<div class="grid-container-p" id="Childrens Electric Dirt Bike">
+					<div class="grid-item-name"><p>Childrens Electric Dirt Bike</p></div>
+					<div class="grid-item-img"><img src="Images/Dirtbike.jpg" width="175px" height="125px"></div>
+					<div class="grid-item-desc"><p>This small electric dirt bike is perfect for younger children who have the need for speed. But not too much as its 1000 watt motor is limited to 25 kilometers per hour so your kids don’t get too ahead of themselves but can still have plenty of fun whether they are just riding about alone or out on an adventure with the family.</p></div>
+					<div class="grid-item-price">£550.00</div>
+					<div class="grid-item-remove" onclick="remove(this.parentNode.id)"><a href="#">remove from Basket</a></div>
+				</div>
+			</template>
+			
+			<template  id="Sky Master Binoculars">
+				<div class="grid-container-p"  id="Sky Master Binoculars">		
+					<div class="grid-item-name">Sky Master Binoculars</div>
+					<div class="grid-item-img"><img src="Images/Binoculars.jpg" width="175px" height="125px"></div>
+					<div class="grid-item-desc">Binoculars capable of 20 - 100 times zoom. Included with the binoculars is a tripod, allowing you to get a super stable view through the lenses.</div>
+					<div class="grid-item-price">£65.00</div>
+					<div class="grid-item-remove" onclick="remove(this.parentNode.id)"><a href="#">remove from Basket</a></div>
+				</div>			
+			</template>
+			
+			<template id="World's Strongest Flashlight">
+				<div class="grid-container-p" id="World's Strongest Flashlight">
+					<div class="grid-item-name">World's Strongest Flashlight</div>
+					<div class="grid-item-img"><img src="Images/Flashlight.jpg" width="175px" height="125px"></div>
+					<div class="grid-item-desc">With a max output of 10000 lumens, this flashlight is more than bright enough for your next camping trip. It is capable of lighting up a whole camping area while you pitch your tent while being compact enough to not take up room in your bag.</div>
+					<div class="grid-item-price">£45.00</div>
+					<div class="grid-item-remove" onclick="remove(this.parentNode.id)"><a href="#">remove from Basket</a></div>
+				</div>			
+			</template>
+			
+			<template id="Air Jack">
+				<div class="grid-container-p" id="Air Jack">
+					<div class="grid-item-name">Air Jack</div>
+					<div class="grid-item-img"><img src="Images/Jack.jpg" width="175px" height="125px"></div>
+					<div class="grid-item-desc">This air jack can be deployed in a pinch whether you need to change a flat tyre or do some maintenance to help you get back home after exploring out in the wilderness for a day, no external tools are needed for inflation as it attatches to your vehicles exhaust to inflate, handy for unexpected incidents.</div>
+					<div class="grid-item-price">£70.00</div>
+					<div class="grid-item-remove" onclick="remove(this.parentNode.id)"><a href="#">remove from Basket</a></div>
+				</div>
+			</template>
+			
+			<template id="Snow Blower">
+				<div class="grid-container-p" id="Snow Blower">
+					<div class="grid-item-name">Snow Blower</div>
+					<div class="grid-item-img"><img src="Images/Blower.jpg" width="175px" height="125px"></div>
+					<div class="grid-item-desc">Whether you need a driveway cleared to allow you to drive to work or a path cleared outside your house to help your neighbours out, this snow blower is the right tool for the job. It will quickly collect the snow and reloacate it off of where you are clearing using the blower section attached to the auger.</div>
+					<div class="grid-item-price">£1500.00</div>
+					<div class="grid-item-remove" onclick="remove(this.parentNode.id)"><a href="#">remove from Basket</a></div>
+				</div>			
+			</template>
+			
+			<template id="Bicycle Computer">
+				<div class="grid-container-p" id="Bicycle Computer">
+					<div class="grid-item-name">Bicycle Computer</div>
+					<div class="grid-item-img"><img src="Images/Computer.jpg" width="175px" height="125px"></div>
+					<div class="grid-item-desc">This bicycle computer is perfect for when you want to track your bike rides to see your speed and distance alongisde other meausurements. It will mount securely to your handle bars to ensure it wont fall off on that rougher terrain.</div>
+					<div class="grid-item-price">20.00</div>
+					<div class="grid-item-remove" onclick="remove(this.parentNode.id)"><a href="#">remove from Basket</a></div>
+				</div>
+			</template>
+			
+			<template id="Translator">
+				<div class="grid-container-p" id="Translator">
+					<div class="grid-item-name">Translator</div>
+					<div class="grid-item-img"><img src="Images/Translator.jpg" width="175px" height="125px"></div>
+					<div class="grid-item-desc">Perfect for when you are traveling to a new country and only know basic parts of the langauge, this translator allows you to input text and have it translated to allow the locals to understand you, perfect for when you lack reception on your phone but need a solution.</div>
+					<div class="grid-item-price">£69.99</div>
+					<div class="grid-item-remove" onclick="remove(this.parentNode.id)"><a href="#">remove from Basket</a></div>
+				</div>
+			</template>
+			
+			<template id="Lawnmower">
+				<div class="grid-container-p" id="Lawnmower">
+					<div class="grid-item-name">Lawnmower</div>
+					<div class="grid-item-img"><img src="Images/Lawnmower.jpg" width="175px" height="125px"></div>
+					<div class="grid-item-desc">Great for the toughest of grass cutting jobs, this powerful lawnmower will make quick work of the longest grass ensuring you have more time to the things you love.</div>
+					<div class="grid-item-price">£70.00</div>
+					<div class="grid-item-remove" onclick="remove(this.parentNode.id)"><a href="#">remove from Basket</a></div>
+				</div>
+			</template>
+			
+			<template id="Three Wheeled Scooter">
+				<div class="grid-container-p" id="Three Wheeled Scooter">
+					<div class="grid-item-name">Three Wheeled Scooter</div>
+					<div class="grid-item-img"><img src="Images/3 Scooter.jpg" width="175px" height="125px"></div>
+					<div class="grid-item-desc">Robustly constructed scooter, with a 500 watt hub motor mounted to the front wheel. With comfortable seat and rear  mounted basket for easy storage of items you want to take with you</div>
+					<div class="grid-item-price">£599.99</div>
+					<div class="grid-item-remove" onclick="remove(this.parentNode.id)"><a href="#">remove from Basket</a></div>
+				</div>			
+			</template>
+			
+			<template id="E-Vespa">
+				<div class="grid-container-p" id="E-Vespa">
+					<div class="grid-item-name">E-Vespa</div>
+					<div class="grid-item-img"><img src="Images/Vespa.jpg" width="175px" height="125px"></div>
+					<div class="grid-item-desc">This retro styleelectric scooter allows you to pretend you are riding around a idyllic italian town no matter where you are. The 300 W motor is manageable enough for more rookie riders with enough range to take you on a 30 mile trip.</div>
+					<div class="grid-item-price">£2000.00</div>
+					<div class="grid-item-remove" onclick="remove(this.parentNode.id)"><a href="#">remove from Basket</a></div>
+				</div>
+			</template>
+			
+			<template id="Commuter Electric Scooter">
+				<div class="grid-container-p" id="Commuter Electric Scooter">
+					<div class="grid-item-name">Commuter Electric Scooter</div>
+					<div class="grid-item-img"><img src="Images/Commuter.jpg" width="175px" height="125px"></div>
+					<div class="grid-item-desc">Perfect for those middle length journeys where a car doesn’t make sense but its too far to walk, this scooter allows for effortless travel on roads and pavements whether it be in a big city or a small town, you will be able to silently breeze past pedestrians and slow rush hour traffic on this scooter. The seat and suspension ensures you will be more than comfortable no matter how long the journey.</div>
+					<div class="grid-item-price">£299.00</div>
+					<div class="grid-item-remove" onclick="remove(this.parentNode.id)"><a href="#">remove from Basket</a></div>
+				</div>
+			</template>
+			
+			<template id="Modern Electric Moped">
+				<div class="grid-container-p" id="Modern Electric Moped">
+					<div class="grid-item-name">Modern Electric Moped</div>
+					<div class="grid-item-img"><img src="Images/Fatbike.jpg" width="175px" height="125px"></div>
+					<div class="grid-item-desc">This e scooter is perfect for those longer and faster commutes through towns and cities, and with its pedal backup if you misjudge how much battery power you need you can still get to your destination on time.</div>
+					<div class="grid-item-price">£400.00</div>
+					<div class="grid-item-remove" onclick="remove(this.parentNode.id)"><a href="#">remove from Basket</a></div>
+				</div>
+			</template>
+			
+			<template id="Futuristic Scooter">
+				<div class="grid-container-p" id="Futuristic Scooter">
+					<div class="grid-item-name">Futuristic Scooter</div>
+					<div class="grid-item-img"><img src="Images/Fatbike.jpg" width="175px" height="125px"></div>
+					<div class="grid-item-desc">This scooter features a futuristic design making you fell like you are in the future as you ride it around, with sleek metal accents and a minimal seat design due to the lack of engine, alowing this scooter to feel light and sporty while still being safe.</div>
+					<div class="grid-item-price">£500.00</div>
+					<div class="grid-item-remove" onclick="remove(this.parentNode.id)"><a href="#">remove from Basket</a></div>
+				</div>
+			</template>
+			
+			<template id="Robot-Man">
+				<div class="grid-container-p" id="Robot-Man">
+					<div class="grid-item-name">Robot-Man</div>
+					<div class="grid-item-img"><img src="Images/Robot.jpg" width="175px" height="125px"></div>
+					<div class="grid-item-desc">Remote controlled bi-pedal robot, capable of picking things up and walking with them. Robot-Man is 17cm tall and can be used for half an hour between charges.</div>
+					<div class="grid-item-price">£30.00</div>
+					<div class="grid-item-remove" onclick="remove(this.parentNode.id)"><a href="#">remove from basket</a></div>
+				</div>
+			</template>
+
+			</div>
+			<p id="price">Total price: £0</p>
+			<form id="order" action="order.html">
+				<input type="submit" value="Order now" >
+			</form>
+			
+			<p onclick="removeAll()" id="removeall"><a href="#">remove all</a></p>
+
+		</section>
+
+	</body>
+</html>
+

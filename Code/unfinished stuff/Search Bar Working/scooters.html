@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>ARNGREN</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="items.js"></script>
+	</head>
+
+	<body onload="getNumItems()">
+		<header>
+			<h1><a href="home.html">ARNGREN</a></h1>
+				<input type="search" value="" id="box" onchange="openPage()">
+				<input type="submit" value="Search">
+		</header>
+
+		<aside id="menu"><!-- Side Menu -->
+			<ul>
+				<li id="title"><b>Product Categories</b></li>
+				<br>
+				<li><a href="electric_bikes.html">Electric Bikes</a></li>
+				<br>
+				<li><a href="kids_electric_vehicles.html">Kids Electric Vehicles</a></li>
+				<br>
+				<li><a href="outdoor_equipment.html">Outdoor Equipment</a></li>
+				<br>
+				<li><a href="scooters.html" class="current">Scooters</a></li>
+				<br>
+				<li><a href="small_electric_toys.html">Small Electric Toys</a></li>
+			</ul>
+		</aside>
+
+		<section class="nav-bar"><!-- Navigation Bar -->
+		<div class="grid-container">
+			<div class="grid-item"><a href="login.html">Sign up & Login</a></div>
+			<div class="grid-item"><a href="home.html">Home</a></div>
+			<div class="grid-item"><a href="basket.html" id="basketnum">Basket</a></div>
+		</div>
+		</section>
+
+		<section><!-- Product List -->
+			<div class="grid-container-p"  id="Three Wheeled Scooter">
+				<div class="grid-item-name">Three Wheeled Scooter</div>
+				<div class="grid-item-img"><img src="Images/3 Scooter.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc">Robustly constructed scooter, with a 500 watt hub motor mounted to the front wheel. With comfortable seat and rear  mounted basket for easy storage of items you want to take with you</div>
+				<div class="grid-item-price"><p>£599.99</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+			
+			<div class="grid-container-p"  id="E-Vespa">
+				<div class="grid-item-name">E-Vespa</div>
+				<div class="grid-item-img"><img src="Images/Vespa.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc">This retro styleelectric scooter allows you to pretend you are riding around a idyllic italian town no matter where you are. The 300 W motor is manageable enough for more rookie riders with enough range to take you on a 30 mile trip.</div>
+				<div class="grid-item-price"><p>£2,000.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+
+			<div class="grid-container-p"  id="Commuter Electric Scooter">
+				<div class="grid-item-name">Commuter Electric Scooter</div>
+				<div class="grid-item-img"><img src="Images/Commuter.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc">Perfect for those middle length journeys where a car doesn’t make sense but its too far to walk, this scooter allows for effortless travel on roads and pavements whether it be in a big city or a small town, you will be able to silently breeze past pedestrians and slow rush hour traffic on this scooter. The seat and suspension ensures you will be more than comfortable no matter how long the journey.</div>
+				<div class="grid-item-price"><p>£299.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+
+			<div class="grid-container-p"  id="Modern Electric Moped">
+				<div class="grid-item-name">Modern Electric Moped</div>
+				<div class="grid-item-img"><img src="Images/Fatbike.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc">This e scooter is perfect for those longer and faster commutes through towns and cities, and with its pedal backup if you misjudge how much battery power you need you can still get to your destination on time.</div>
+				<div class="grid-item-price"><p>£400.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+
+			<div class="grid-container-p"  id="Futuristic Scooter">
+				<div class="grid-item-name">Futuristic Scooter</div>
+				<div class="grid-item-img"><img src="Images/Fatbike.jpg" width="175px" height="125px"></div>
+				<div class="grid-item-desc">This scooter features a futuristic design making you fell like you are in the future as you ride it around, with sleek metal accents and a minimal seat design due to the lack of engine, alowing this scooter to feel light and sporty while still being safe.</div>
+				<div class="grid-item-price"><p>£500.00</p></div>
+				<div class="grid-item-remove" onclick="add(this.parentNode.id)"><a href="#">Add to Basket</a></div>
+			</div>
+		</section>
+		
+	</body>
+</html>
+
